@@ -10,13 +10,15 @@
 name: OpenWrt-CI
 
 on:
-  schedule:
-    - cron: 0 20 * * *
+  #定时编译分时日月周
+  #schedule:
+  #  - cron: 0 0 3 * *
   release:
     types: [published]
-  push:
-    branches: 
-      - master
+  #触发编译
+  #push:
+  #  branches: 
+  #    - master
 
 jobs:
 
